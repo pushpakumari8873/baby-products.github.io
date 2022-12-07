@@ -1,0 +1,834 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-size: 50px;
+  color: #000;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 25px 0;
+}
+
+h3 {
+  font-size: 10px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 25px;
+  color: rgb(119, 118, 118);
+  line-height: 30px;
+  text-align: justify;
+  margin: 15px 0;
+}
+
+.button {
+  width: 180px;
+  height: 40px;
+  background-color: #f2ede3;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #f5f2ea;
+}
+
+a.button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #f2ede3;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #f5f2ea;
+}
+
+.section-p1 {
+  margin: 100px 60px;
+}
+
+/* start of header section */
+
+#header h3{
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 0;
+  text-shadow: 0px 0 0.8px #000;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+#menu {
+  display: flex;
+  position: relative;
+}
+
+#menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+#menu li a:acive::after,
+#menu li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+/* banner */
+
+#banner {
+  background: url(./img/banneer3.webp);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 30%;
+  margin: 0 60px;
+}
+
+#banner p {
+  position: absolute;
+  top: 45%;
+  margin: 0 60px;
+}
+
+#banner button {
+  position: absolute;
+  top: 62%;
+  margin: 0 60px;
+}
+
+/* Home products */
+
+#home-products {
+  text-align: center;
+}
+
+#home-products p {
+  text-align: center;
+}
+
+.home-products-image {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.home-products-image img {
+  padding: 12px;
+  width: 100%;
+}
+
+/* home-about */
+
+#home-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-about-content {
+  width: 100%;
+  overflow: hidden;
+  padding-right: 140px;
+}
+
+.home-about-image img {
+  width: 450px;
+  height: 450px;
+}
+
+/* home gallery */
+
+#home-gallery {
+  text-align: center;
+}
+
+.home-gallery-image {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.home-gallery-image img {
+  width: 100%;
+  padding: 0 12px;
+}
+
+#home-gallery a {
+  margin: auto;
+}
+
+/* footer */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(253, 243, 215, 0.767);
+  width: 100%;
+  padding: 60px;
+}
+
+#footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+#footer p {
+  font-size: 18px;
+  color: #000;
+}
+
+#footer .address i {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+#footer input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #f2ede3;
+}
+
+#footer input:focus {
+  outline: none;
+}
+
+/* //////////////////////ABOUT PAGE////////////// */
+
+#about-page-banner {
+  text-align: center;
+}
+
+#about-page-banner p {
+  text-align: center;
+}
+
+#about-page-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-page-images img {
+  width: 100%;
+  padding: 0 12px;
+}
+
+#about-page-content {
+  padding: 0 80px;
+}
+
+#about-page-content h3 {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* ////////  END OF ABOUT PAGE   ////////////// */
+
+/* ////////   START OF INSIGHTS PAGE   ///// */
+
+#insights-page-banner {
+  text-align: center;
+}
+
+#insights-page-banner p {
+  text-align: center;
+}
+
+#insights-page-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#insights-page-images img {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.insights-products-image img {
+  padding: 12px;
+  width: 100%;
+}
+
+/* ////////   END OF INSIGHTS PAGE   ///// */
+
+/* ////////////   START  OF STORE PAGE    ///////////*/
+
+#store-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#store-images h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+#store-images p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 10px;
+}
+
+#store-images .store-box {
+  margin: 10px 0;
+}
+
+/* ////////////   END  OF STORE PAGE    ///////////*/
+
+/* ////////////   START OF CONTACT PAGE    ///////////*/
+
+#contact-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact-page img {
+  height: 100vh;
+}
+
+#contact-page .contact-page-form {
+  padding: 0 80px;
+}
+
+.contact-page-form input {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0 20px 0;
+  background-color: #c4c2bf21;
+  border: none;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.contact-page-form input:focus {
+  outline: none;
+}
+
+.contact-page-form label {
+  font-weight: 600;
+}
+
+.contact-page-form input[type="submit"] {
+  display: block;
+  width: 30%;
+  background-color: #f5f2ea;
+}
+
+/* ////////////   END OF CONTACT PAGE    ///////////*/
+
+@media (max-width: 799px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: rgba(255, 251, 240, 0.829);
+    position: fixed;
+    width: 300px;
+    z-index: 999;
+
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    padding: 80px 40px 0 40px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  #menu.active {
+    right: 0px;
+  }
+
+  #menu li {
+    margin-bottom: 15px;
+  }
+
+  #mobile i {
+    font-size: 25px;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 20px;
+    color: #000;
+    display: initial;
+  }
+
+  #mobile {
+    display: initial;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  /* start of home page */
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 15px 0;
+  }
+
+  h3 {
+    font-size: 10px;
+    line-height: 30px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+
+  .section-p1 {
+    margin: 40px 20px;
+  }
+
+  .button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  /* start of banner */
+
+  #banner {
+    width: 100%;
+    height: 60vh;
+  }
+
+  #banner h1 {
+    top: 20%;
+  }
+
+  #banner p {
+    top: 40%;
+  }
+
+  #banner button {
+    top: 70%;
+  }
+
+  /* end of banner */
+
+  /* Home products */
+
+  .home-products-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+  }
+
+  .home-products-image img {
+    padding: 0px;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  /* home-about */
+
+  #home-about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-about-content {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .home-about-image img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /* home gallery */
+
+  .home-gallery-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px 0;
+  }
+
+  .home-gallery-image img {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* footer */
+
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 20px 20px;
+  }
+  #footer > div {
+    margin-bottom: 20px;
+  }
+
+  #footer h3 {
+    font-size: 15px;
+  }
+
+  #footer p {
+    font-size: 15px;
+  }
+
+  #footer .address i {
+    font-size: 15px;
+  }
+
+  #footer input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* End of home page */
+
+  /* start of about page */
+
+  #about-page-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #about-page-images img {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  #about-page-content {
+    padding: 0px;
+  }
+
+  #about-page-content h3 {
+    font-size: 15px;
+  }
+
+  /* end of about page */
+
+  /* ////////   START OF INSIGHTS PAGE   ///// */
+
+  #insights-page-images {
+    justify-content: center;
+  }
+
+  /* ////////   END OF INSIGHTS PAGE   ///// */
+
+  /* ////////   START OF STORE PAGE   ///// */
+
+  #store-images {
+    justify-content: center;
+  }
+
+  /* ////////   END OF STORE PAGE   ///// */
+
+  /* ////////////   START OF CONTACT PAGE    ///////////*/
+
+  #contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #contact-page .contact-page-form {
+    padding: 20px;
+
+    margin: auto;
+  }
+
+  .contact-page-form input {
+    display: block;
+    width: 100%;
+  }
+
+  #contact-page img {
+    width: 100%;
+  }
+
+  /* ////////////   END OF CONTACT PAGE    ///////////*/
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 15px 0;
+  }
+
+  h3 {
+    font-size: 10px;
+    line-height: 30px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+
+  .section-p1 {
+    margin: 40px 60px;
+  }
+
+  .button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+
+
+ 
+/* start of home page */
+
+
+
+/* start of banner */
+
+#banner {
+  width: 100%;
+  height: 60vh;
+}
+
+#banner h1 {
+  top: 20%;
+}
+
+#banner p {
+  top: 40%;
+}
+
+#banner button {
+  top: 70%;
+}
+
+/* end of banner */
+
+/* Home products */
+
+.home-products-image {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0px;
+}
+
+.home-products-image img {
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+/* home-about */
+
+#home-about {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.home-about-content {
+  padding-right: 80px;
+}
+
+.home-about-image img {
+  width: 100%;
+}
+
+/* home gallery */
+
+.home-gallery-image {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.home-gallery-image img {
+  padding: 10px ;
+}
+
+
+
+/* End of home page */
+
+
+/* ////////   START OF INSIGHTS PAGE   ///// */
+
+
+#insights-page-images {
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+
+#insights-page-images img {
+ 
+  padding: 10px ;
+}
+
+
+
+/* ////////   END OF INSIGHTS PAGE   ///// */
+
+/* ////////////   START  OF STORE PAGE    ///////////*/
+
+#store-images {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+#store-images img{
+  padding: 10px ;
+  width: 100%;
+}
+
+/* ////////////   END  OF STORE PAGE    ///////////*/
+
+/* ////////////   START OF CONTACT PAGE    ///////////*/
+
+
+#contact-page img {
+  height: 80vh;
+}
+
+
+
+
+/* ////////////   END OF CONTACT PAGE    ///////////*/
+
+
+/* footer */
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 20px 60px;
+}
+#footer > div {
+  margin-bottom: 20px;
+}
+
+}
+
+ /* Media Query for Laptops and Desktops */
+ @media (min-width: 1025px) and (max-width: 1280px){
+ 
+
+
+/* ////////   START OF INSIGHTS PAGE   ///// */
+
+
+#insights-page-images {
+  display: grid;
+ grid-template-columns: repeat(3,1fr);
+}
+
+#insights-page-images img {
+ 
+  padding: 10px ;
+}
+
+
+
+/* ////////   END OF INSIGHTS PAGE   ///// */
+
+/* ////////////   START  OF STORE PAGE    ///////////*/
+
+#store-images {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+#store-images img{
+  padding: 10px ;
+  width: 100%;
+}
+
+/* ////////////   END  OF STORE PAGE    ///////////*/
+
+}
+
+
